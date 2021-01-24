@@ -5,7 +5,7 @@
 健康的人可以用一下（雾）。
 #### 使用说明
 使用Fiddler等工具对今日校园进行抓包，手动打卡后找到`http://202.121.174.56:8089/report/report/todayReport`这条记录，从中取出post请求时发送的`ts`和`decodes`两条header，填入代码里，然后再从请求体中找到下面这样的一串json，把它按照python的dict的格式也写到代码里对应的位置就行，然后执行`python3 FUCKDailyReport.py`
-```json
+```jsonc
 {
   "username": "f17xxxxx"
   // etc
