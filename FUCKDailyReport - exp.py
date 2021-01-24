@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 import requests
-import datetime
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
-
-today = datetime.date.today().strftime("%Y-%m-%d")
 
 # TODO 13位时间戳
 ts =
@@ -12,6 +9,36 @@ ts =
 decodes = ''
 # TODO 你的data dict/json形式填入即可
 data = {
+    "usercode": 学号,
+    "username": 姓名,
+    # 体温：0：36-37.2
+    "wendu": 0,
+    # 其他症状：0：无
+    "ksfl": 0,
+    # 密切接触：0：无
+    "mjjcqzhz": 0,
+    # 前往、途径中高风险地区
+    "qwhtjzgfxdq": 0,
+    # 同住人前往、途径中高风险地区
+    "tzrqwhtjzgfxdq": 0,
+    # 当前位置
+    "position": 区、地址之类的,
+    # 在不在学校
+    "inschool": 0,
+    # 所在地区中高风险
+    "szdsfzgfxdq": 0,
+    # 所在地市中高风险
+    "szdssfyzgfxdq": 0,
+    # 当日往返
+    "drwf": 0,
+    # 目的地
+    "mdd": 区、地址之类的,
+    "sy": "",
+    # 交通工具
+    "jtgj": 1,
+    "jtcc": "",
+    "remarks": "",
+    "currentsituation": 3
 }
 
 
